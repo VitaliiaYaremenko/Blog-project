@@ -1,0 +1,38 @@
+@use "sass:map";
+
+@mixin create-btn-style ( $bg, $font-color, $fw:map-get($font-weights, 'bold')) {
+  background-color: $bg;
+  color: $font-color;
+  font-weight: $fw;
+
+  &:hover {
+    @if $bg == map-get($colors, 'yellow-color') {
+      background-color: map-get($colors, 'yellow-hover-btn');
+    } @else {
+      background-color: map-get($colors, 'light-grey-color');
+    }
+  }
+}
+
+@mixin create-btn-sizes ($dimensions, $fz) {
+  padding: $dimensions;
+  font-size: $fz;
+}
+
+@mixin flex-gap ($gap: false) {
+  @if $gap != false {
+    display: flex;
+    gap: $gap;
+  }
+}
+
+@mixin create-title-styles ($fz, $color: map-get($colors,'primary-text-color'), $fw: map-get($font-weights: 'regular')) {
+  font-size: $fz;
+  color: $color;
+  font-weight: $fw;
+}
+
+@mixin base-text-style ( $lh: map-get($line-height, 'xl'), $ls: 'normal') {
+  line-height: $lh;
+  letter-spacing: $ls;
+}

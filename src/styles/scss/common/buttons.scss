@@ -1,0 +1,43 @@
+@use "sass:map";
+
+.btn {
+  font-family: $main-font-family;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding:  16px 48px;
+  transition: .3s;
+
+  &:focus {
+    border-color: map-get($colors,'primary-text-color');
+  }
+
+  &.btn-primary {
+    @include create-btn-style(
+                    map-get($colors, 'yellow-color'),
+                    map-get($colors, 'primary-text-color'),
+    );
+  }
+
+  &.btn-secondary {
+    @include create-btn-style(
+                    map-get($colors, 'basic-white-color'),
+                    map-get($colors, 'primary-text-color'),
+    );
+  }
+
+  &.btn-lg {
+    @include create-btn-sizes(
+                    18px 50px,
+                    map-get($font-sizes, 'md')
+    );
+  }
+
+  &.btn-md {
+    @include create-btn-sizes( 16px 48px, map-get($font-sizes, 'sm'));
+  }
+
+  &.btn-sm {
+    @include create-btn-sizes( 12px 42px,  map-get($font-sizes, 'xs'));
+  }
+}
