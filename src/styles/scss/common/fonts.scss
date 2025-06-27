@@ -1,0 +1,62 @@
+@use "sass:map";
+
+@font-face {
+  font-family: 'Sen';
+  src: url( $base-fonts-path + 'Sen-Regular.eot');
+  src: url( $base-fonts-path + 'Sen-Regular.eot?#iefix') format('embedded-opentype'),
+  url( $base-fonts-path + 'Sen-Regular.woff2') format('woff2'),
+  url( $base-fonts-path + 'Sen-Regular.woff') format('woff'),
+  url( $base-fonts-path + 'Sen-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sen';
+  src: url( $base-fonts-path + 'Sen-Medium.eot');
+  src: url( $base-fonts-path + 'Sen-Medium.eot?#iefix') format('embedded-opentype'),
+  url( $base-fonts-path + 'Sen-Medium.woff2') format('woff2'),
+  url( $base-fonts-path + 'Sen-Medium.woff') format('woff'),
+  url( $base-fonts-path + 'Sen-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sen';
+  src: url( $base-fonts-path + 'Sen-SemiBold.eot');
+  src: url( $base-fonts-path + 'Sen-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url( $base-fonts-path + 'Sen-SemiBold.woff2') format('woff2'),
+  url( $base-fonts-path + 'Sen-SemiBold.woff') format('woff'),
+  url( $base-fonts-path + 'Sen-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sen';
+  src: url( $base-fonts-path + 'Sen-ExtraBold.eot');
+  src: url( $base-fonts-path + 'Sen-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url( $base-fonts-path + 'Sen-ExtraBold.woff2') format('woff2'),
+  url( $base-fonts-path + 'Sen-ExtraBold.woff') format('woff'),
+  url( $base-fonts-path + 'Sen-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sen';
+  src: url( $base-fonts-path + 'Sen-Bold.eot');
+  src: url( $base-fonts-path + 'Sen-Bold.eot?#iefix') format('embedded-opentype'),
+  url( $base-fonts-path + 'Sen-Bold.woff2') format('woff2'),
+  url( $base-fonts-path + 'Sen-Bold.woff') format('woff'),
+  url( $base-fonts-path + 'Sen-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
