@@ -1,0 +1,33 @@
+@use "sass:map";
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+%basic-link {
+  color: map-get($colors, 'basic-white-color');
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-bottom: 2px solid map-get($colors, 'basic-white-color');
+  }
+}
+
+%basic-subtitle-styles {
+  font-size: map-get($font-sizes, 'lg');
+  font-weight: map-get($font-weights, 'bold');
+  line-height: map-get($line-height, 'md');
+  letter-spacing: -0.06em;
+}
+
+%basic-border-style {
+  border: 1px solid map-get($colors, 'border-color');
+}

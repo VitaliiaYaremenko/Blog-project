@@ -1,5 +1,221 @@
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list, .header__navigations {
+  display: flex;
+  align-items: center;
+}
+
+.header__link {
+  color: #FFFFFF;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+.header__link:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+@font-face {
+  font-family: "Sen";
+  src: url("./../../fonts/Sen-Regular.eot");
+  src: url("./../../fonts/Sen-Regular.eot?#iefix") format("embedded-opentype"), url("./../../fonts/Sen-Regular.woff2") format("woff2"), url("./../../fonts/Sen-Regular.woff") format("woff"), url("./../../fonts/Sen-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("./../../fonts/Sen-Medium.eot");
+  src: url("./../../fonts/Sen-Medium.eot?#iefix") format("embedded-opentype"), url("./../../fonts/Sen-Medium.woff2") format("woff2"), url("./../../fonts/Sen-Medium.woff") format("woff"), url("./../../fonts/Sen-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("./../../fonts/Sen-SemiBold.eot");
+  src: url("./../../fonts/Sen-SemiBold.eot?#iefix") format("embedded-opentype"), url("./../../fonts/Sen-SemiBold.woff2") format("woff2"), url("./../../fonts/Sen-SemiBold.woff") format("woff"), url("./../../fonts/Sen-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("./../../fonts/Sen-ExtraBold.eot");
+  src: url("./../../fonts/Sen-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./../../fonts/Sen-ExtraBold.woff2") format("woff2"), url("./../../fonts/Sen-ExtraBold.woff") format("woff"), url("./../../fonts/Sen-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("./../../fonts/Sen-Bold.eot");
+  src: url("./../../fonts/Sen-Bold.eot?#iefix") format("embedded-opentype"), url("./../../fonts/Sen-Bold.woff2") format("woff2"), url("./../../fonts/Sen-Bold.woff") format("woff"), url("./../../fonts/Sen-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 body {
-  background-color: navajowhite;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.btn {
+  font-family: "Sen", sans-serif;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 16px 48px;
+  transition: 0.3s;
+}
+.btn:focus {
+  border-color: #232536;
+}
+.btn.btn-primary {
+  background-color: #FFD050;
+  color: #232536;
+  font-weight: 700;
+}
+.btn.btn-primary:hover {
+  background-color: #c7a445;
+}
+.btn.btn-secondary {
+  background-color: #FFFFFF;
+  color: #232536;
+  font-weight: 700;
+}
+.btn.btn-secondary:hover {
+  background-color: #F4F4F4;
+}
+.btn.btn-lg {
+  padding: 18px 50px;
+  font-size: 24px;
+}
+.btn.btn-md {
+  padding: 16px 48px;
+  font-size: 18px;
+}
+.btn.btn-sm {
+  padding: 12px 42px;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: #232536;
+  line-height: 1.75;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.container-xl {
+  max-width: 805px;
+}
+
+.container-lg {
+  max-width: 730px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.margin-top {
+  margin-top: 128px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.accent-light-yellow {
+  background-color: #FBF6EA;
+}
+
+.header {
+  background-color: #232536;
+  padding: 12px 0;
+  max-height: 80px;
+}
+.header__content {
+  align-items: center;
+}
+.header__logo-link {
+  display: inline-block;
+}
+.header__navigations {
+  gap: 32px;
+}
+.header__list {
+  gap: 24px;
 }
 
 /*# sourceMappingURL=home-page.css.map */
