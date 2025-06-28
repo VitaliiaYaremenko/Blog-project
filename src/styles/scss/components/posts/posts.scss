@@ -1,0 +1,88 @@
+.posts {
+  margin-top: 128px;
+
+  &__content {
+    @include flex-gap(32px);
+  }
+
+  &__title {
+    @extend %basic-subtitle-styles;
+    margin-bottom: 32px;
+  }
+
+  &__card {
+    @extend %basic-border-style;
+    padding: 32px;
+  }
+
+  &__picture {
+    margin-bottom: 32px;
+  }
+
+  &__date {
+    @include create-title-styles(
+                    map-get($font-sizes, 'xxs'),
+                    map-get($colors, 'dark-gray-color'),
+                    map-get($font-weights, 'medium')
+    );
+
+    @include flex-gap(10px);
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__speaker {
+    span {
+      color: map-get($colors, 'accent-purple');
+    }
+  }
+
+  &__subtitle {
+    @include create-title-styles(
+                    map-get($font-sizes, 'md'),
+                    map-get($colors, 'primary-text-color'),
+                    map-get($font-weights, 'bold')
+    );
+    @include base-text-style( map-get($line-height, 'lg'), -0.04em);
+    max-width: 595px;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    color: map-get($colors, 'secondary-text-color');
+    max-width: 555px;
+    margin-bottom: 32px;
+  }
+
+  &__recent-controls {
+    @extend %flex-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+    a {
+      color: map-get($colors, 'accent-purple');
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-bottom: 2px solid map-get($colors, 'accent-purple');
+      }
+    }
+  }
+
+  &__recent-card {
+    padding: 32px;
+  }
+
+  &__recent-subtitle {
+    @include create-title-styles(
+                    map-get($font-sizes, 'md'),
+                    map-get($colors, 'primary-text-color'),
+                    map-get($font-weights, 'bold')
+    );
+    line-height: map-get($line-height, 'md');
+  }
+}
