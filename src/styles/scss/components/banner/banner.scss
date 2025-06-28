@@ -1,0 +1,46 @@
+@use "sass:map";
+
+.banner {
+  padding: 128px 0;
+  background-image:
+          radial-gradient(80.99% 71.93% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, #04040482 100%),
+          url($base-assets-path + 'images/banner/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook.jpg');
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    color: map-get($colors, 'basic-white-color');
+  }
+
+  &__subtitle {
+    font-weight: map-get($font-weights, 'medium');
+    @include base-text-style( map-get($line-height,'sm' ), 0.19em);
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include create-title-styles (
+                    map-get($font-sizes,  'xxl'),
+                    map-get($colors, 'basic-white-color'),
+                    map-get($font-weights, 'bold')
+    );
+    @include base-text-style( map-get($line-height, 'xs'), -0.04em);
+    margin-bottom: 24px;
+  }
+
+  &__date {
+    @include flex-gap(10px);
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__speaker {
+    span {
+      color: map-get($colors, 'yellow-color');
+    }
+  }
+
+  &__description {
+    margin-bottom: 48px;
+  }
+}
