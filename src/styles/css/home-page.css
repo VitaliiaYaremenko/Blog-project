@@ -1,4 +1,4 @@
-.header__content {
+.posts__recent-controls, .header__content {
   display: flex;
   justify-content: space-between;
 }
@@ -16,6 +16,17 @@
 }
 .header__link:hover {
   border-bottom: 2px solid #FFFFFF;
+}
+
+.posts__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.06em;
+}
+
+.posts__card {
+  border: 1px solid #afb0b7;
 }
 
 @font-face {
@@ -251,6 +262,73 @@ img {
 }
 .banner__description {
   margin-bottom: 48px;
+}
+
+.posts {
+  margin-top: 128px;
+}
+.posts__content {
+  display: flex;
+  gap: 32px;
+}
+.posts__title {
+  margin-bottom: 32px;
+}
+.posts__card {
+  padding: 32px;
+}
+.posts__picture {
+  margin-bottom: 32px;
+}
+.posts__date {
+  font-size: 14x;
+  color: #4C4C4C;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.posts__speaker span {
+  color: #592EA9;
+}
+.posts__subtitle {
+  font-size: 24px;
+  color: #232536;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.04em;
+  max-width: 595px;
+  margin-bottom: 16px;
+}
+.posts__info {
+  color: #6D6E76;
+  max-width: 555px;
+  margin-bottom: 32px;
+}
+.posts__recent-controls {
+  align-items: center;
+  margin-bottom: 32px;
+}
+.posts__recent-controls h2 {
+  margin-bottom: 0;
+}
+.posts__recent-controls a {
+  color: #592EA9;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+.posts__recent-controls a:hover {
+  border-bottom: 2px solid #592EA9;
+}
+.posts__recent-card {
+  padding: 32px;
+}
+.posts__recent-subtitle {
+  font-size: 24px;
+  color: #232536;
+  font-weight: 700;
+  line-height: 1.33;
 }
 
 /*# sourceMappingURL=home-page.css.map */
