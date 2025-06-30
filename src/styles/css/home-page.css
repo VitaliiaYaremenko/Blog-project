@@ -1,4 +1,4 @@
-.posts__recent-controls, .header__content {
+.about__content, .posts__recent-controls, .header__content {
   display: flex;
   justify-content: space-between;
 }
@@ -185,6 +185,10 @@ body {
   max-width: 730px;
 }
 
+.container-sm {
+  max-width: 414px;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -329,6 +333,54 @@ img {
   color: #232536;
   font-weight: 700;
   line-height: 1.33;
+}
+
+.about__content {
+  position: relative;
+  background-color: #F4F0F8;
+  gap: 80px;
+  padding: 95px 80px;
+}
+.about__img {
+  position: absolute;
+  top: -23px;
+  right: 0;
+}
+.about__us, .about__mission {
+  flex: 1 1 50%;
+}
+.about__subtitle {
+  font-size: 16px;
+  color: #232536;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.about__title {
+  font-size: 36px;
+  color: #232536;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.06em;
+  max-width: 485px;
+  margin-bottom: 16px;
+}
+.about__title--mission {
+  font-size: 24px;
+  color: #232536;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: -0.04em;
+}
+.about__descriptions {
+  line-height: 1.75;
+  color: #6D6E76;
+  margin-bottom: 16px;
+}
+.about__btn {
+  font-size: 18px;
+  color: #592EA9;
+  font-weight: 700;
+  padding: 16px 8px;
 }
 
 /*# sourceMappingURL=home-page.css.map */
