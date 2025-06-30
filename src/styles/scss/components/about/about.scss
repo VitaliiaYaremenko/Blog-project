@@ -1,0 +1,66 @@
+.about {
+  $flex-controls: 1 1 50%;
+
+  &__content {
+    position: relative;
+    @extend %flex-between;
+    background-color: map-get($colors, 'lavander-color');
+    gap: 80px;
+    padding: 95px 80px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -23px;
+    right: 0;
+  }
+
+  &__us,
+  &__mission {
+    flex: $flex-controls;
+  }
+
+  &__subtitle {
+    @include create-title-styles(
+                    map-get($font-sizes, 'xs'),
+                    map-get($colors, 'primary-text-color'),
+                    map-get($font-weights, 'bold')
+    );
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include create-title-styles(
+                    map-get($font-sizes, 'lg'),
+                    map-get($colors, 'primary-text-color'),
+                    map-get($font-weights, 'bold')
+    );
+    @include base-text-style(map-get($line-height, 'md'), -0.06em);
+    max-width: 485px;
+    margin-bottom: 16px;
+
+    &--mission {
+      @include create-title-styles(
+                      map-get($font-sizes, 'md'),
+                      map-get($colors, 'primary-text-color'),
+                      map-get($font-weights, 'bold')
+      );
+      @include base-text-style(map-get($line-height, 'lg'), -0.04em);
+    }
+  }
+
+  &__descriptions {
+    line-height: map-get($line-height, 'xl');
+    color: map-get($colors, 'secondary-text-color');
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    @include create-title-styles(
+                    map-get($font-sizes, 'sm'),
+                    map-get($colors, 'accent-purple'),
+                    map-get($font-weights, 'bold')
+    );
+    padding: 16px 8px;
+  }
+}

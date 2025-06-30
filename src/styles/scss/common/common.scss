@@ -25,6 +25,10 @@ body {
   max-width: map-get($containers, 'container-lg');
 }
 
+.container-sm {
+  max-width: map-get($containers,  'container-sm');
+}
+
 a {
   display: inline-block;
   text-decoration: none;
