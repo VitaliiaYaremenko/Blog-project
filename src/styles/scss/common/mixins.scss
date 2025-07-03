@@ -36,3 +36,7 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+
+@mixin border-style ($border-size, $border-color) {
+  border: $border-size solid $border-color;
+}

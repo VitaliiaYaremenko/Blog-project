@@ -55,3 +55,9 @@ img {
 .accent-light-yellow {
   background-color: map-get($colors, 'accent-light-yellow-color');
 }
+.accent-orange {
+  background-color: map-get($colors, 'yellow-color');
+}
+.main-border {
+  @include border-style(1px, map-get($colors, 'border-color'));
+}
