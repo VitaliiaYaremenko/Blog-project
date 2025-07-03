@@ -1,0 +1,52 @@
+.categories {
+
+  $wrapper-picture-width: 48px;
+  $base-card-width: (
+          'height': 228px,
+          'width': 296px,
+  );
+
+  &__title {
+    @extend %basic-subtitle-styles;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  &__content {
+    @extend %flex-between;
+    gap: 32px;
+  }
+
+  &__card {
+    max-width: map-get($base-card-width, 'width');
+    max-height: map-get($base-card-width, 'height');
+    padding: 32px;
+  }
+
+  &__card-picture {
+    @extend %flex-center;
+    justify-content: center;
+    max-width: $wrapper-picture-width;
+    max-height: $wrapper-picture-width;
+    background-color: map-get($colors, 'accent-light-yellow-color');
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 16px;
+  }
+
+  &__card-title {
+    @include create-title-styles(
+                    map-get($font-sizes, 'md'),
+                    map-get($colors, 'primary-text-color'),
+                    map-get($font-weights, 'bold')
+    );
+
+    @include base-text-style(map-get($line-height, 'lg'), -0.04em);
+    margin-bottom: 5px;
+  }
+
+  &__card-desc {
+    color: map-get($colors, 'secondary-text-color');
+    line-height: map-get($line-height, 'xl');
+  }
+}
