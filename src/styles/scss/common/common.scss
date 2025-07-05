@@ -24,7 +24,9 @@ body {
 .container-lg {
   max-width: map-get($containers, 'container-lg');
 }
-
+.container-md {
+  max-width: map-get($containers, 'container-md');
+}
 .container-sm {
   max-width: map-get($containers,  'container-sm');
 }

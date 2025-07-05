@@ -1,0 +1,43 @@
+@use "sass:map";
+
+.story {
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__content {
+    background-color: map-get($colors, 'basic-white-color');
+    padding: 80px;
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  &__subtitle {
+    @include base-text-style(map-get($line-height, 'sm'), 0.19em);
+    font-size: map-get($font-sizes, 'xs');
+    font-weight: map-get($font-weights, 'medium');
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: map-get($font-sizes, 'xl');
+    font-weight: map-get($font-weights, 'bold');
+    @include base-text-style(map-get($line-height, 'md'), -0.04em);
+    max-width: 548px;
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    font-size: map-get($font-sizes, 'xs');
+    color: map-get($colors, 'secondary-text-color');
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    font-size: map-get($font-sizes, 'sm');
+    line-height: map-get($line-height, 'md');
+  }
+}
