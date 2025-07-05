@@ -185,6 +185,10 @@ body {
   max-width: 730px;
 }
 
+.container-md {
+  max-width: 700px;
+}
+
 .container-sm {
   max-width: 414px;
 }
@@ -423,6 +427,42 @@ img {
 .categories__card-desc {
   color: #6D6E76;
   line-height: 1.75;
+}
+
+.story__wrapper {
+  position: relative;
+}
+.story__content {
+  background-color: #FFFFFF;
+  padding: 80px;
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+  z-index: 10;
+}
+.story__subtitle {
+  line-height: 1.25;
+  letter-spacing: 0.19em;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.story__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.04em;
+  max-width: 548px;
+  margin-bottom: 16px;
+}
+.story__desc {
+  font-size: 16px;
+  color: #6D6E76;
+  margin-bottom: 32px;
+}
+.story__btn {
+  font-size: 18px;
+  line-height: 1.33;
 }
 
 /*# sourceMappingURL=home-page.css.map */
