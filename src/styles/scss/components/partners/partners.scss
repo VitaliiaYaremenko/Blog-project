@@ -1,0 +1,32 @@
+.partners {
+
+  color: map-get($colors, 'secondary-text-color');
+  padding: 40px 0;
+
+  &__content {
+    @extend %flex-center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  &__subtitle {
+    font-size: map-get($font-sizes, 'xxs');
+    line-height: map-get($line-height, 'lg');
+  }
+
+  &__title {
+    font-size: map-get($font-sizes, 'md');
+    line-height: map-get($line-height, 'md');
+    font-weight: map-get($font-weights, 'bold');
+  }
+
+  &__list {
+    @extend %flex-center;
+    justify-content: center;
+    gap: 75px;
+
+    img {
+      fill: map-get($colors, 'secondary-text-color');
+    }
+  }
+}
