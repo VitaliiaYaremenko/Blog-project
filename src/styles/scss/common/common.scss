@@ -54,6 +54,9 @@ img {
   font-weight: map-get($font-weights, 'extra-bold');
 }
 
+.accent-light-grey {
+  background-color: map-get($colors, 'light-grey-color');
+}
 .accent-light-yellow {
   background-color: map-get($colors, 'accent-light-yellow-color');
 }

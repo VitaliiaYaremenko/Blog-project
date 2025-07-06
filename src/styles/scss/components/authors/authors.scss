@@ -1,0 +1,54 @@
+@use "sass:map";
+
+.authors {
+
+  &__title {
+    @extend %basic-subtitle-styles;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__content {
+    @extend %flex-center;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.author-card {
+  text-align: center;
+  padding: 40px 28px;
+
+  &__picture {
+    @extend %flex-center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: map-get($font-sizes, 'md');
+    font-weight: map-get($font-weights, 'bold');
+    @include base-text-style(map-get($line-height,  'lg'), -0.04em);
+  }
+
+  &__desc {
+    font-size: map-get($font-sizes, 'xxs');
+    line-height: map-get($line-height, 'lg');
+    color: map-get($colors, 'secondary-text-color');
+    margin-bottom: 20px;
+  }
+  &__social {
+    @extend %flex-center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__social a {
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
