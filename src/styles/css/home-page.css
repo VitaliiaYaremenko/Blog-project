@@ -1,4 +1,4 @@
-.categories__content, .about__content, .posts__recent-controls, .header__content {
+.testimonials__content, .categories__content, .about__content, .posts__recent-controls, .header__content {
   display: flex;
   justify-content: space-between;
 }
@@ -18,7 +18,7 @@
   border-bottom: 2px solid #FFFFFF;
 }
 
-.authors__title, .categories__title, .posts__title {
+.testimonials__title, .authors__title, .categories__title, .posts__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.33;
@@ -533,6 +533,26 @@ img {
 }
 .partners__list img {
   fill: #6D6E76;
+}
+
+.testimonials__content {
+  background-color: #FBF6EA;
+}
+.testimonials__header {
+  max-width: 349px;
+  padding: 92px 80px 172px 112px;
+}
+.testimonials__subtitle {
+  line-height: 1.25;
+  letter-spacing: 0.19em;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.testimonials__title {
+  margin-bottom: 16px;
+}
+.testimonials__body {
+  padding: 80px 174px 0 96px;
 }
 
 /*# sourceMappingURL=home-page.css.map */

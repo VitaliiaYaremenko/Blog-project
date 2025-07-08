@@ -1,0 +1,29 @@
+@use "sass:map";
+
+.testimonials {
+
+  &__content {
+    background-color: map-get($colors, 'accent-light-yellow-color');
+    @extend %flex-between;
+  }
+
+  &__header {
+    max-width: 349px;
+    padding: 92px 80px 172px 112px;
+  }
+
+  &__subtitle {
+    @include base-text-style(map-get($line-height, 'sm'), 0.19em);
+    font-weight: map-get($font-weights, 'bold');
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    @extend %basic-subtitle-styles;
+    margin-bottom: 16px;
+  }
+
+  &__body {
+    padding: 80px 174px 0 96px;
+  }
+}
