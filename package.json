@@ -17,6 +17,7 @@
   "homepage": "https://github.com/VitaliiaYaremenko/Blog-project#readme",
   "description": "",
   "dependencies": {
+    "bootstrap-icons": "^1.13.1",
     "sass": "^1.89.2"
   },
   "devDependencies": {

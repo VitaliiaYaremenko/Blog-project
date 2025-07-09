@@ -5,11 +5,11 @@
   &__content {
     background-color: map-get($colors, 'accent-light-yellow-color');
     @extend %flex-between;
+    padding: 80px 112px 75px;
   }
 
   &__header {
     max-width: 349px;
-    padding: 92px 80px 172px 112px;
   }
 
   &__subtitle {
@@ -24,6 +24,67 @@
   }
 
   &__body {
-    padding: 80px 174px 0 96px;
+    padding-left: 95px;
+    border-left: 1px solid map-get($colors, 'border-color');
+  }
+
+  &__text {
+    font-weight: map-get($font-weights, 'bold');
+    font-size: map-get($font-sizes, 'md');
+    line-height: map-get($line-height,'md');
+    max-width: 469px;
+    margin-bottom: 120px;
+  }
+
+  &__footer {
+    @extend %flex-between;
+    align-items: center;
+  }
+
+  &__author {
+    @extend %flex-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__author-name {
+    font-weight: map-get($font-weights, 'bold');
+    font-size: map-get($font-sizes, 'md');
+    line-height: map-get($line-height,'md');
+  }
+
+  &__author-location {
+    color: map-get($colors, 'secondary-text-color');
+  }
+
+  &__controls {
+    @extend %flex-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__button {
+    background-color: map-get($colors, 'basic-white-color');
+    @extend %flex-center;
+    justify-content: center;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+
+    i {
+      @extend %flex-center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    &:hover {
+      background-color: map-get($colors, 'primary-text-color');
+      transform: scale(1.2);
+      i {
+        color: map-get($colors, 'basic-white-color');
+      }
+    }
   }
 }
