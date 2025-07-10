@@ -1,31 +1,31 @@
-.testimonials__controls, .testimonials__author, .testimonials__footer, .testimonials__content, .categories__content, .about__content, .posts__recent-controls, .header__content {
+.footer__bottom, .footer__subscribe, .footer__list, .footer__top, .testimonials__controls, .testimonials__author, .testimonials__footer, .testimonials__content, .categories__content, .about__content, .posts__recent-controls, .header__content {
   display: flex;
   justify-content: space-between;
 }
 
-.testimonials__button i, .testimonials__button, .partners__list, .partners__content, .author-card__social, .author-card__picture, .authors__content, .categories__card-picture, .header__list, .header__navigations {
+.footer__social-list, .footer__subscribe-form, .testimonials__button i, .testimonials__button, .partners__list, .partners__content, .author-card__social, .author-card__picture, .authors__content, .categories__card-picture, .header__list, .header__navigations {
   display: flex;
   align-items: center;
 }
 
-.header__link {
+.footer__link, .header__link {
   color: #FFFFFF;
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
 }
-.header__link:hover {
+.footer__link:hover, .header__link:hover {
   border-bottom: 2px solid #FFFFFF;
 }
 
-.join__title, .testimonials__title, .authors__title, .categories__title, .posts__title {
+.footer__subscribe-title, .join__title, .testimonials__title, .authors__title, .categories__title, .posts__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.33;
   letter-spacing: -0.06em;
 }
 
-.posts__card {
+.footer__subscribe-input, .posts__card {
   border: 1px solid #afb0b7;
 }
 
@@ -617,6 +617,72 @@ img {
 .join__btn {
   font-size: 18px;
   line-height: 1.33;
+}
+
+.footer {
+  background-color: #232536;
+  padding: 55px 80px;
+}
+.footer__top {
+  align-items: center;
+  margin-bottom: 55px;
+}
+.footer__list {
+  gap: 25px;
+}
+.footer__subscribe {
+  background-color: #353749;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 80px;
+  margin-bottom: 45px;
+}
+.footer__subscribe-title {
+  color: #FFFFFF;
+  max-width: 562px;
+}
+.footer__subscribe-form {
+  gap: 24px;
+}
+.footer__subscribe-input {
+  width: 323px;
+  height: 56px;
+  padding: 0 25px;
+  background-color: #353749;
+}
+.footer__subscribe-input::placeholder {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.footer__subscribe-button {
+  font-size: 18px;
+  height: 56px;
+}
+.footer__bottom {
+  align-items: center;
+}
+.footer__contacts {
+  color: #6D6E76;
+}
+.footer__contacts a {
+  color: #6D6E76;
+}
+.footer__social-list {
+  gap: 26px;
+}
+.footer__social-list a {
+  color: #6D6E76;
+}
+.footer__social-list i {
+  width: 16px;
+  height: 16px;
+}
+.footer__social-list a {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.footer__social-list a:hover {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=home-page.css.map */

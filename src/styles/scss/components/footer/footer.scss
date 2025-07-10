@@ -1,0 +1,96 @@
+@use "sass:map";
+
+.footer {
+  background-color: map-get($colors, 'primary-text-color');
+  padding: 55px 80px;
+
+  &__top {
+    @extend %flex-between;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  &__list {
+    @extend %flex-between;
+    gap: 25px;
+  }
+
+  &__link {
+    @extend %basic-link;
+  }
+
+  &__subscribe {
+    background-color: #353749;
+    @extend %flex-between;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+    margin-bottom: 45px;
+
+  }
+
+  &__subscribe-title {
+    @extend %basic-subtitle-styles;
+    color: map-get($colors, 'basic-white-color');
+    max-width: 562px;
+  }
+
+  &__subscribe-form {
+    @extend %flex-center;
+    gap: 24px;
+  }
+
+  &__subscribe-input {
+    width: 323px;
+    height: 56px;
+    padding: 0 25px;
+    background-color: #353749;
+    @extend %basic-border-style;
+  }
+
+  &__subscribe-input::placeholder {
+    text-transform: capitalize;
+    font-size: map-get($font-sizes, 'xs');
+  }
+
+  &__subscribe-button {
+    font-size: map-get($font-sizes, 'sm');
+    height: 56px;
+  }
+
+  &__bottom {
+    @extend %flex-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    color: map-get($colors, 'secondary-text-color');
+
+    a {
+      color: map-get($colors, 'secondary-text-color');
+    }
+  }
+
+  &__social-list {
+    @extend %flex-center;
+    gap: 26px;
+
+    a {
+      color: map-get($colors, 'secondary-text-color');
+    }
+  }
+
+  &__social-list i {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__social-list a {
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: map-get($colors, 'basic-white-color');
+    }
+  }
+}
