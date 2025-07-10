@@ -5,6 +5,12 @@
   justify-content: space-between;
 }
 
+%flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 %flex-center {
   display: flex;
   align-items: center;
@@ -19,6 +25,13 @@
   &:hover {
     border-bottom: 2px solid map-get($colors, 'basic-white-color');
   }
+}
+
+%main-text-style {
+  font-size: map-get($font-sizes, 'xs');
+  font-weight: map-get($font-weights, 'regular');
+  color: map-get($colors, 'primary-text-color');
+  line-height: map-get($line-height, 'xl');
 }
 
 %basic-subtitle-styles {
