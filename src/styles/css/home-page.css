@@ -189,22 +189,6 @@ body {
   max-width: 1280px;
 }
 
-.container-xl {
-  max-width: 805px;
-}
-
-.container-lg {
-  max-width: 730px;
-}
-
-.container-md {
-  max-width: 700px;
-}
-
-.container-sm {
-  max-width: 414px;
-}
-
 a {
   display: inline-block;
   text-decoration: none;
@@ -323,7 +307,7 @@ img {
 }
 .posts__subtitle {
   max-width: 595px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .posts__info {
   color: #6D6E76;
@@ -429,7 +413,7 @@ img {
 }
 .story__content {
   background-color: #FFFFFF;
-  max-width: 700px;
+  max-width: 595px;
   padding: 80px;
   position: absolute;
   right: -100px;

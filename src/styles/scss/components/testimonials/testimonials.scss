@@ -10,18 +10,18 @@
   }
 
   &__header {
-    max-width: 350px;
+    max-width: map-get($containers, 'xs');
   }
 
   &__subtitle {
     @include base-text-style(map-get($line-height, 'sm'), 0.19em);
     font-weight: map-get($font-weights, 'semi-bold');
-    margin-bottom: 12px;
+    margin-bottom: map-get($spacings, 'md');
   }
 
   &__title {
     @extend %heading-xl;
-    margin-bottom: 16px;
+    margin-bottom: map-get($spacings, 'base');
   }
 
   &__body {
@@ -35,7 +35,7 @@
           map-get($font-weights, 'bold'),
           map-get($line-height, 'md'),
     );
-    max-width: 465px;
+    max-width: map-get($containers, 'xs-md');
     margin-bottom: 120px;
   }
 

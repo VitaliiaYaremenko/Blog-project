@@ -27,13 +27,13 @@
         map-get($font-weights, 'semi-bold'),
         map-get($line-height, 'sm'),
     );
-    margin-bottom: 24px;
+    margin-bottom: map-get($spacings, 'xl');
   }
 
   &__title {
     @extend %heading-xl;
-    max-width: 485px;
-    margin-bottom: 16px;
+    max-width: map-get($containers, 'sm');
+    margin-bottom: map-get($spacings, 'base');
 
     &--mission {
       @extend %heading-lg;
@@ -42,7 +42,7 @@
 
   &__descriptions {
     color: map-get($colors, 'secondary-text-color');
-    margin-bottom: 16px;
+    margin-bottom: map-get($spacings, 'base');
   }
 
   &__btn {

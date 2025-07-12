@@ -10,13 +10,13 @@
 
   &__content {
     color: map-get($colors, 'basic-white-color');
-    max-width: map-get($containerss, 'xl');
+    max-width: map-get($containers, 'xl');
   }
 
   &__subtitle {
     @include base-text-style( map-get($line-height,'sm' ), 0.19em);
     font-weight: map-get($font-weights, 'medium');
-    margin-bottom: 24px;
+    margin-bottom: map-get($spacings, 'xl');
   }
 
   &__title {
@@ -26,13 +26,13 @@
                     map-get($line-height, 'xs'),
     );
     letter-spacing: -0.04em;
-    margin-bottom: 24px;
+    margin-bottom: map-get($spacings, 'xl');
   }
 
   &__date {
     @extend %flex-center;
     @include flex-gap(10px);
-    margin-bottom: 16px;
+    margin-bottom: map-get($spacings, 'base');
   }
 
   &__speaker {
@@ -42,6 +42,6 @@
   }
 
   &__description {
-    margin-bottom: 48px;
+    margin-bottom: map-get($spacings, '4xl');
   }
 }

@@ -6,21 +6,21 @@
   }
 
   &__featured {
-    max-width: map-get($containerss, 'lg');
+    max-width: map-get($containers, 'lg');
   }
 
   &__title {
     @extend %heading-xl;
-    margin-bottom: 32px;
+    margin-bottom: map-get($spacings, 'xxl');
   }
 
   &__card {
     @extend %basic-border-style;
-    padding: 32px;
+    padding: map-get($spacings, 'xxl');
   }
 
   &__picture {
-    margin-bottom: 32px;
+    margin-bottom: map-get($spacings, 'xxl');
   }
 
   &__date {
@@ -31,7 +31,7 @@
              map-get($font-weights, 'medium'),
              map-get($line-height, 'lg'),
     );
-    margin-bottom: 8px;
+    margin-bottom: map-get($spacings, 'sm');
   }
 
   &__speaker {
@@ -42,19 +42,19 @@
 
   &__subtitle {
     @extend %heading-lg;
-    max-width: 595px;
-    margin-bottom: 16px;
+    max-width: map-get($containers, 'md');
+    margin-bottom: map-get($spacings, 'md');
   }
 
   &__info {
     color: map-get($colors, 'secondary-text-color');
-    max-width: 555px;
-    margin-bottom: 32px;
+    max-width: map-get($containers, 'sm-lg');
+    margin-bottom: map-get($spacings, 'xxl');
   }
 
   &__recent-controls {
     @extend %flex-between-center;
-    margin-bottom: 32px;
+    margin-bottom: map-get($spacings, 'xxl');
 
     h2 {
       margin-bottom: 0;
@@ -72,7 +72,7 @@
   }
 
   &__recent-card {
-    padding: 32px;
+    padding: map-get($spacings, 'xxl');
   }
 
   &__recent-subtitle {

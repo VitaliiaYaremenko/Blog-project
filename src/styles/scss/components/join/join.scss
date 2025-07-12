@@ -8,12 +8,12 @@
 
   &__title {
     @extend %heading-xl;
-    margin-bottom: 16px;
+    margin-bottom: map-get($spacings, 'base');
   }
 
   &__subtitle {
     color: map-get($colors, 'secondary-text-color');
-    margin-bottom: 32px;
+    margin-bottom: map-get($spacings, 'xxl');
   }
 
   &__btn {

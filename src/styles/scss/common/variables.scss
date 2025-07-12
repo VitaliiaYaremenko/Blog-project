@@ -5,6 +5,7 @@ $main-font-family: 'Sen', sans-serif;
 
 $colors: (
         'main-bg-color': #E5E5E5,
+        'bg-color-transparent': #353749,
         'primary-text-color': #232536,
         'secondary-text-color': #6D6E76,
         'basic-white-color': #FFFFFF,
@@ -46,6 +47,18 @@ $line-height: (
         'xs': 1.14,
 );
 
+$spacings: (
+        'xs': 5px,
+        'sm': 8px,
+        'md': 12px,
+        'base': 16px,
+        'lg': 20px,
+        'xl': 24px,
+        'xxl': 32px,
+        '3xl': 45px,
+        '4xl': 48px,
+);
+
 $breakpoints: (
         'xxl': 1440px,
         'xl': 1280px,
@@ -56,15 +69,15 @@ $breakpoints: (
 );
 
 $containers: (
-        'container-xl': 805px,
-        'container-lg': 730px,
-        'container-md': 700px,
-        'container-sm': 414px,
-);
-
-$containerss: (
         'xl': 805px,
         'lg': 730px,
-        'md': 700px,
-        'sm': 414px,
+        'md-xl': 700px,
+        'md': 595px,
+        'sm-xl': 562px,
+        'sm-lg': 555px,
+        'sm-md': 548px,
+        'sm': 485px,
+        'xs-lg': 470px,
+        'xs-md': 465px,
+        'xs': 350px,
 );

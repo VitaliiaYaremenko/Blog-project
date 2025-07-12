@@ -9,7 +9,7 @@
   &__title {
     @extend %heading-xl;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: map-get($spacings, '4xl');
   }
 
   &__content {
@@ -20,7 +20,7 @@
   &__card {
     max-width: map-get($base-card-width, 'width');
     max-height: map-get($base-card-width, 'height');
-    padding: 32px;
+    padding: map-get($spacings, 'xxl');
   }
 
   &__card-picture {
@@ -29,14 +29,14 @@
     max-height: $wrapper-picture-width;
     @extend %flex-center;
     justify-content: center;
-    padding: 12px;
+    padding: map-get($spacings, 'md');
     border-radius: 15px;
     margin-bottom: 16px;
   }
 
   &__card-title {
     @extend %heading-lg;
-    margin-bottom: 5px;
+    margin-bottom: map-get($spacings, 'xs');
   }
 
   &__card-desc {

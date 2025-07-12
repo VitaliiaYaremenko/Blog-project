@@ -1,6 +1,9 @@
 @use "sass:map";
 
 .footer {
+
+  $social-icon-size: 16px;
+
   background-color: map-get($colors, 'primary-text-color');
   padding: 55px 80px;
 
@@ -19,18 +22,18 @@
   }
 
   &__subscribe {
-    background-color: #353749;
+    background-color: map-get($colors, 'bg-color-transparent');
     @extend %flex-between-center;
     @include flex-gap(64px);
     padding: 64px 80px;
-    margin-bottom: 45px;
+    margin-bottom: map-get($spacings, '3xl');
 
   }
 
   &__subscribe-title {
     @extend %heading-xl;
     color: map-get($colors, 'basic-white-color');
-    max-width: 562px;
+    max-width: map-get($containers, 'sm-xl');
   }
 
   &__subscribe-form {
@@ -77,8 +80,8 @@
   }
 
   &__social-list i {
-    width: 16px;
-    height: 16px;
+    width: $social-icon-size;
+    height: $social-icon-size;
   }
 
   &__social-list a {
