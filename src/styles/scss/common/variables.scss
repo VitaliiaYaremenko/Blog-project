@@ -46,7 +46,7 @@ $line-height: (
         'xs': 1.14,
 );
 
-$content-width: (
+$breakpoints: (
         'xxl': 1440px,
         'xl': 1280px,
         'lg': 1024px,
@@ -60,4 +60,11 @@ $containers: (
         'container-lg': 730px,
         'container-md': 700px,
         'container-sm': 414px,
-)
+);
+
+$containerss: (
+        'xl': 805px,
+        'lg': 730px,
+        'md': 700px,
+        'sm': 414px,
+);

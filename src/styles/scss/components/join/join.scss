@@ -7,7 +7,7 @@
   }
 
   &__title {
-    @extend %basic-subtitle-styles;
+    @extend %heading-xl;
     margin-bottom: 16px;
   }
 
@@ -17,7 +17,6 @@
   }
 
   &__btn {
-    font-size: map-get($font-sizes, 'sm');
     line-height: map-get($line-height, 'md');
   }
 }

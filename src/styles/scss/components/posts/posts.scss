@@ -5,8 +5,12 @@
     @include flex-gap(32px);
   }
 
+  &__featured {
+    max-width: map-get($containerss, 'lg');
+  }
+
   &__title {
-    @extend %basic-subtitle-styles;
+    @extend %heading-xl;
     margin-bottom: 32px;
   }
 
@@ -20,14 +24,13 @@
   }
 
   &__date {
-    @include create-title-styles(
-                    map-get($font-sizes, 'xxs'),
-                    map-get($colors, 'dark-gray-color'),
-                    map-get($font-weights, 'medium')
-    );
-
+    @extend %flex-center;
     @include flex-gap(10px);
-    align-items: center;
+    @include main-title-styles(
+             map-get($font-sizes, 'xxs'),
+             map-get($font-weights, 'medium'),
+             map-get($line-height, 'lg'),
+    );
     margin-bottom: 8px;
   }
 
@@ -38,12 +41,7 @@
   }
 
   &__subtitle {
-    @include create-title-styles(
-                    map-get($font-sizes, 'md'),
-                    map-get($colors, 'primary-text-color'),
-                    map-get($font-weights, 'bold')
-    );
-    @include base-text-style( map-get($line-height, 'lg'), -0.04em);
+    @extend %heading-lg;
     max-width: 595px;
     margin-bottom: 16px;
   }
@@ -55,13 +53,13 @@
   }
 
   &__recent-controls {
-    @extend %flex-between;
-    align-items: center;
+    @extend %flex-between-center;
     margin-bottom: 32px;
 
     h2 {
       margin-bottom: 0;
     }
+
     a {
       color: map-get($colors, 'accent-purple');
       border-bottom: 2px solid transparent;
@@ -78,11 +76,10 @@
   }
 
   &__recent-subtitle {
-    @include create-title-styles(
-                    map-get($font-sizes, 'md'),
-                    map-get($colors, 'primary-text-color'),
-                    map-get($font-weights, 'bold')
+    @include main-title-styles(
+        map-get($font-sizes, 'md'),
+        map-get($font-weights, 'bold'),
+        map-get($line-height, 'md'),
     );
-    line-height: map-get($line-height, 'md');
   }
 }

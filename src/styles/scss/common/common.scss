@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: map-get($content-width, 'xl');
+  max-width: map-get($breakpoints, 'xl');
 }
 
 .container-xl {

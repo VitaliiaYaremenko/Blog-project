@@ -3,15 +3,15 @@
 .authors {
 
   &__title {
-    @extend %basic-subtitle-styles;
+    @extend %heading-xl;
     text-align: center;
     margin-bottom: 48px;
   }
 
   &__content {
     @extend %flex-center;
+    @include flex-gap(32px);
     justify-content: center;
-    gap: 32px;
   }
 }
 
@@ -26,9 +26,7 @@
   }
 
   &__name {
-    font-size: map-get($font-sizes, 'md');
-    font-weight: map-get($font-weights, 'bold');
-    @include base-text-style(map-get($line-height,  'lg'), -0.04em);
+    @extend %heading-lg;
   }
 
   &__desc {
@@ -37,13 +35,15 @@
     color: map-get($colors, 'secondary-text-color');
     margin-bottom: 20px;
   }
+
   &__social {
     @extend %flex-center;
+    @include flex-gap(16px);
     justify-content: center;
-    gap: 16px;
   }
 
-  &__social a {
+  &__link {
+    color: map-get($colors, 'primary-text-color');
     cursor: pointer;
     transition: all 0.3s;
 

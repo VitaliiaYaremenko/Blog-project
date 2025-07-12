@@ -1,6 +1,7 @@
 @use "sass:map";
 
 .testimonials {
+  $btn-size: 48px;
 
   &__content {
     background-color: map-get($colors, 'accent-light-yellow-color');
@@ -9,17 +10,17 @@
   }
 
   &__header {
-    max-width: 349px;
+    max-width: 350px;
   }
 
   &__subtitle {
     @include base-text-style(map-get($line-height, 'sm'), 0.19em);
-    font-weight: map-get($font-weights, 'bold');
+    font-weight: map-get($font-weights, 'semi-bold');
     margin-bottom: 12px;
   }
 
   &__title {
-    @extend %basic-subtitle-styles;
+    @extend %heading-xl;
     margin-bottom: 16px;
   }
 
@@ -29,28 +30,30 @@
   }
 
   &__text {
-    font-weight: map-get($font-weights, 'bold');
-    font-size: map-get($font-sizes, 'md');
-    line-height: map-get($line-height,'md');
-    max-width: 469px;
+    @include main-title-styles(
+          map-get($font-sizes, 'md'),
+          map-get($font-weights, 'bold'),
+          map-get($line-height, 'md'),
+    );
+    max-width: 465px;
     margin-bottom: 120px;
   }
 
   &__footer {
-    @extend %flex-between;
-    align-items: center;
+    @extend %flex-between-center;
   }
 
   &__author {
-    @extend %flex-between;
-    align-items: center;
-    gap: 16px;
+    @extend %flex-between-center;
+    @include flex-gap(16px);
   }
 
   &__author-name {
-    font-weight: map-get($font-weights, 'bold');
-    font-size: map-get($font-sizes, 'md');
-    line-height: map-get($line-height,'md');
+    @include main-title-styles(
+                    map-get($font-sizes, 'md'),
+                    map-get($font-weights, 'bold'),
+                    map-get($line-height, 'md'),
+    );
   }
 
   &__author-location {
@@ -58,9 +61,8 @@
   }
 
   &__controls {
-    @extend %flex-between;
-    align-items: center;
-    gap: 16px;
+    @extend %flex-between-center;
+    @include flex-gap(16px);
   }
 
   &__button {
@@ -68,8 +70,8 @@
     @extend %flex-center;
     justify-content: center;
     padding: 0;
-    width: 48px;
-    height: 48px;
+    width: $btn-size;
+    height: $btn-size;
     border-radius: 50px;
     transition: all 0.3s ease;
 

@@ -1,11 +1,12 @@
 .about {
   $flex-controls: 1 1 50%;
+  $btn-shadow: 0 0 17px 0 #9676d2;
 
   &__content {
     position: relative;
-    @extend %flex-between;
     background-color: map-get($colors, 'lavander-color');
-    gap: 80px;
+    @extend %flex-between;
+    @include flex-gap(80px);
     padding: 95px 80px;
   }
 
@@ -21,46 +22,42 @@
   }
 
   &__subtitle {
-    @include create-title-styles(
-                    map-get($font-sizes, 'xs'),
-                    map-get($colors, 'primary-text-color'),
-                    map-get($font-weights, 'bold')
+    @include main-title-styles(
+        map-get($font-sizes, 'xs'),
+        map-get($font-weights, 'semi-bold'),
+        map-get($line-height, 'sm'),
     );
     margin-bottom: 24px;
   }
 
   &__title {
-    @include create-title-styles(
-                    map-get($font-sizes, 'lg'),
-                    map-get($colors, 'primary-text-color'),
-                    map-get($font-weights, 'bold')
-    );
-    @include base-text-style(map-get($line-height, 'md'), -0.06em);
+    @extend %heading-xl;
     max-width: 485px;
     margin-bottom: 16px;
 
     &--mission {
-      @include create-title-styles(
-                      map-get($font-sizes, 'md'),
-                      map-get($colors, 'primary-text-color'),
-                      map-get($font-weights, 'bold')
-      );
-      @include base-text-style(map-get($line-height, 'lg'), -0.04em);
+      @extend %heading-lg;
     }
   }
 
   &__descriptions {
-    line-height: map-get($line-height, 'xl');
     color: map-get($colors, 'secondary-text-color');
     margin-bottom: 16px;
   }
 
   &__btn {
-    @include create-title-styles(
-                    map-get($font-sizes, 'sm'),
-                    map-get($colors, 'accent-purple'),
-                    map-get($font-weights, 'bold')
+    @include main-title-styles(
+        map-get($font-sizes, 'sm'),
+        map-get($font-weights, 'bold'),
+        map-get($line-height, 'xl'),
     );
+    color: map-get($colors, 'accent-purple');
+    border-radius: 5px;
     padding: 16px 8px;
+    transition: box-shadow .3s;
+
+    &:hover {
+      box-shadow: $btn-shadow;
+    }
   }
 }

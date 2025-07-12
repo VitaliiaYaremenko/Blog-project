@@ -5,14 +5,13 @@
   padding: 55px 80px;
 
   &__top {
-    @extend %flex-between;
-    align-items: center;
+    @extend %flex-between-center;
     margin-bottom: 55px;
   }
 
   &__list {
     @extend %flex-between;
-    gap: 25px;
+    @include flex-gap(25px);
   }
 
   &__link {
@@ -21,23 +20,22 @@
 
   &__subscribe {
     background-color: #353749;
-    @extend %flex-between;
-    align-items: center;
-    gap: 64px;
+    @extend %flex-between-center;
+    @include flex-gap(64px);
     padding: 64px 80px;
     margin-bottom: 45px;
 
   }
 
   &__subscribe-title {
-    @extend %basic-subtitle-styles;
+    @extend %heading-xl;
     color: map-get($colors, 'basic-white-color');
     max-width: 562px;
   }
 
   &__subscribe-form {
     @extend %flex-center;
-    gap: 24px;
+    @include flex-gap(24px);
   }
 
   &__subscribe-input {
@@ -54,13 +52,11 @@
   }
 
   &__subscribe-button {
-    font-size: map-get($font-sizes, 'sm');
     height: 56px;
   }
 
   &__bottom {
-    @extend %flex-between;
-    align-items: center;
+    @extend %flex-between-center;
   }
 
   &__contacts {
@@ -73,7 +69,7 @@
 
   &__social-list {
     @extend %flex-center;
-    gap: 26px;
+    @include flex-gap(26px);
 
     a {
       color: map-get($colors, 'secondary-text-color');

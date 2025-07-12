@@ -26,10 +26,10 @@
   }
 }
 
-@mixin create-title-styles ($fz, $color: map-get($colors,'primary-text-color'), $fw: map-get($font-weights: 'regular')) {
+@mixin main-title-styles ($fz, $fw, $lh) {
   font-size: $fz;
-  color: $color;
-  font-weight: $fw;
+  font-weight:$fw;
+  line-height:$lh ;
 }
 
 @mixin base-text-style ( $lh: map-get($line-height, 'xl'), $ls: 'normal') {

@@ -7,14 +7,14 @@
   );
 
   &__title {
-    @extend %basic-subtitle-styles;
-    margin-bottom: 48px;
+    @extend %heading-xl;
     text-align: center;
+    margin-bottom: 48px;
   }
 
   &__content {
     @extend %flex-between;
-    gap: 32px;
+    @include flex-gap(32px);
   }
 
   &__card {
@@ -24,29 +24,22 @@
   }
 
   &__card-picture {
-    @extend %flex-center;
-    justify-content: center;
+    background-color: map-get($colors, 'accent-light-yellow-color');
     max-width: $wrapper-picture-width;
     max-height: $wrapper-picture-width;
-    background-color: map-get($colors, 'accent-light-yellow-color');
+    @extend %flex-center;
+    justify-content: center;
     padding: 12px;
     border-radius: 15px;
     margin-bottom: 16px;
   }
 
   &__card-title {
-    @include create-title-styles(
-                    map-get($font-sizes, 'md'),
-                    map-get($colors, 'primary-text-color'),
-                    map-get($font-weights, 'bold')
-    );
-
-    @include base-text-style(map-get($line-height, 'lg'), -0.04em);
+    @extend %heading-lg;
     margin-bottom: 5px;
   }
 
   &__card-desc {
     color: map-get($colors, 'secondary-text-color');
-    line-height: map-get($line-height, 'xl');
   }
 }

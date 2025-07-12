@@ -10,27 +10,28 @@
 
   &__content {
     color: map-get($colors, 'basic-white-color');
+    max-width: map-get($containerss, 'xl');
   }
 
   &__subtitle {
-    font-weight: map-get($font-weights, 'medium');
     @include base-text-style( map-get($line-height,'sm' ), 0.19em);
+    font-weight: map-get($font-weights, 'medium');
     margin-bottom: 24px;
   }
 
   &__title {
-    @include create-title-styles (
+    @include main-title-styles(
                     map-get($font-sizes,  'xxl'),
-                    map-get($colors, 'basic-white-color'),
-                    map-get($font-weights, 'bold')
+                    map-get($font-weights, 'bold'),
+                    map-get($line-height, 'xs'),
     );
-    @include base-text-style( map-get($line-height, 'xs'), -0.04em);
+    letter-spacing: -0.04em;
     margin-bottom: 24px;
   }
 
   &__date {
+    @extend %flex-center;
     @include flex-gap(10px);
-    align-items: center;
     margin-bottom: 16px;
   }
 
