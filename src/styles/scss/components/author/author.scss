@@ -1,0 +1,44 @@
+@use "sass:map";
+
+.author-hero {
+
+  background-color: map-get($colors, 'lavander-color');
+  padding: 128px 0;
+
+  &__content {
+    @extend %flex-center;
+    @include flex-gap(32px);
+  }
+
+  &__title {
+    @include main-title-styles(
+        map-get($font-sizes, 'xl'),
+        map-get($font-weights, 'bold'),
+        map-get($line-height, 'md'),
+    );
+    letter-spacing: -0.04em;
+    margin-bottom: map-get($spacings, 'xl');
+    max-width: map-get($containers, 'md-xl');
+  }
+
+  &__desc {
+    color: map-get($colors, 'secondary-text-color');
+    max-width: 665px;
+    margin-bottom: map-get($spacings, 'xl');
+  }
+
+  &__social {
+    @extend %flex-center;
+    @include flex-gap(16px);
+
+    i {
+      color: map-get($colors, 'primary-text-color');
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
