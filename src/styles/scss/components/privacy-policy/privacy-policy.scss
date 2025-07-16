@@ -1,0 +1,50 @@
+@use "sass:map";
+
+.policy-header {
+  background-color: map-get($colors, 'lavander-color');
+  padding: 80px 0;
+  text-align: center;
+
+  &__title {
+    @include main-title-styles(
+        map-get($font-sizes, 'xl'),
+        map-get($font-weights, 'bold'),
+        map-get($line-height, 'md'),
+    );
+    letter-spacing: -0.04em;
+  }
+
+  &__data {
+    color: map-get($colors, 'secondary-text-color');
+  }
+}
+
+.policy-content {
+  &__body {
+    max-width: 768px;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: map-get($spacings, 'xxl');
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    @include main-title-styles(
+                    map-get($font-sizes, 'xl'),
+                    map-get($font-weights, 'bold'),
+                    map-get($line-height, 'md'),
+    );
+    letter-spacing: -0.04em;
+    margin-bottom: map-get($spacings, 'xxl');
+  }
+
+  &__subtitle {
+    @extend %heading-xl;
+    margin-bottom: map-get($spacings, 'xl');
+  }
+}
