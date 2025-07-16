@@ -456,6 +456,10 @@ img {
 .author-card {
   text-align: center;
   padding: 40px 28px;
+  transition: box-shadow 0.3s;
+}
+.author-card:hover {
+  box-shadow: 0 5px 12px 0 #7c7676;
 }
 .author-card__picture {
   justify-content: center;

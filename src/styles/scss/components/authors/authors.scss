@@ -18,6 +18,11 @@
 .author-card {
   text-align: center;
   padding: 40px 28px;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 5px 12px 0 map-get($colors,'shadow-color');
+  }
 
   &__picture {
     @extend %flex-center;
