@@ -5,28 +5,28 @@
 
   &__content {
     @extend %flex-center;
+    @include flex-gap(85px);
     justify-content: center;
-    gap: 80px;
   }
 
-  &__subtitle {
-    font-size: map-get($font-sizes, 'xxs');
-    line-height: map-get($line-height, 'lg');
-  }
-
-  &__title {
-    font-size: map-get($font-sizes, 'md');
-    line-height: map-get($line-height, 'md');
-    font-weight: map-get($font-weights, 'bold');
+  &__title,
+  &__item {
+    @include main-title-styles(
+          map-get($font-sizes, 'md'),
+          map-get($font-weights, 'bold'),
+          map-get($line-height, 'md')
+    )
   }
 
   &__list {
     @extend %flex-center;
-    justify-content: center;
-    gap: 75px;
+    @include flex-gap(65px);
+  }
 
-    img {
-      fill: map-get($colors, 'secondary-text-color');
-    }
+  &__item {
+    max-width: 160px;
+    @extend %flex-center;
+    @include flex-gap(8px);
   }
 }
+
