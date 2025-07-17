@@ -4,6 +4,14 @@
 
   background-color: map-get($colors, 'lavander-color');
   padding: 128px 0;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
 
   &__content {
     @extend %flex-center;
@@ -11,12 +19,7 @@
   }
 
   &__title {
-    @include main-title-styles(
-        map-get($font-sizes, 'xl'),
-        map-get($font-weights, 'bold'),
-        map-get($line-height, 'md'),
-    );
-    letter-spacing: -0.04em;
+    @extend %heading-xxl;
     margin-bottom: map-get($spacings, 'xl');
     max-width: map-get($containers, 'md-xl');
   }

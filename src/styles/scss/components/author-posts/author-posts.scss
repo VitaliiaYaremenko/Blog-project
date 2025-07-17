@@ -1,0 +1,41 @@
+@use "sass:map";
+
+.author-posts {
+  $text-width: 570px;
+
+  &__title {
+    @extend %heading-xxl;
+    margin-bottom: map-get($spacings, '5xl');
+  }
+
+  &__content {
+    @extend %flex-colum;
+    @include flex-gap(64px);
+  }
+
+  &__card {
+    @extend %flex-center;
+    @include flex-gap(64px);
+  }
+
+  &__category {
+    color: map-get($colors, 'accent-purple');
+    font-weight: map-get($font-weights, 'semi-bold');
+    @include base-text-style(map-get($line-height, 'sm'), 0.19em);
+    margin-bottom: map-get($spacings, 'lg');
+  }
+
+  &__subtitle {
+    @extend %heading-xl;
+    margin-bottom: map-get($spacings, 'base');
+  }
+
+  &__subtitle,
+  &__desc {
+    max-width: $text-width;
+  }
+
+  &__desc {
+    color: map-get($colors, 'secondary-text-color');
+  }
+}

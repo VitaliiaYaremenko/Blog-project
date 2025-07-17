@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog-page</title>
+    <title>Author-page</title>
     <link rel="stylesheet" href="./../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./../styles/css/author-page.css">
 </head>
@@ -44,6 +44,7 @@
 </header>
 <main>
     <section class="author-hero">
+        <img class="author-hero__img" src="./../assets/images/icons/pattern.svg" alt="pattern" width="1061" height="23">
         <div class="container">
             <div class="author-hero__content">
                 <div class="author-hero__pictures">
@@ -69,7 +70,33 @@
                 </div>
             </div>
         </div>
-
+    </section>
+    <section class="author-posts margin-top">
+        <div class="container">
+            <div class="author-posts__content">
+                <h2 class="author-posts__title">My Posts</h2>
+                <article class="author-posts__card">
+                    <div class="author-posts__picture">
+                        <img src="./../assets/images/posts/stained-glass-high-rise-building.jpg" alt="building" width="412" height="320">
+                    </div>
+                    <div class="author-posts__body">
+                        <p class="author-posts__category text-uppercase">business</p>
+                        <h4 class="author-posts__subtitle">Font sizes in UI design: The complete guide to follow</h4>
+                        <p class="author-posts__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </article>
+                <article class="author-posts__card">
+                    <div class="author-posts__picture">
+                        <img src="./../assets/images/posts/man-in-black-crew-neck-t-shirt-sitting-beside-woman.jpg" alt="man" width="412" height="320">
+                    </div>
+                    <div class="author-posts__body">
+                        <p class="author-posts__category text-uppercase">economy</p>
+                        <h4 class="author-posts__subtitle">How to build rapport with your web design clients</h4>
+                        <p class="author-posts__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 </main>
 
