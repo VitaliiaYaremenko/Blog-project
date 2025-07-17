@@ -24,6 +24,13 @@
   border-bottom: 2px solid #FFFFFF;
 }
 
+.policy-content__title, .policy-header__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.04em;
+}
+
 .footer__subscribe-title, .policy-content__subtitle {
   font-weight: 700;
   font-size: 36px;
@@ -238,12 +245,6 @@ img {
   padding: 80px 0;
   text-align: center;
 }
-.policy-header__title {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.33;
-  letter-spacing: -0.04em;
-}
 .policy-header__data {
   color: #6D6E76;
 }
@@ -259,10 +260,6 @@ img {
   margin-bottom: 0;
 }
 .policy-content__title {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.33;
-  letter-spacing: -0.04em;
   margin-bottom: 32px;
 }
 .policy-content__subtitle {

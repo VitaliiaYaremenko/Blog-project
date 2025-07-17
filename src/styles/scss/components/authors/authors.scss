@@ -32,6 +32,9 @@
 
   &__name {
     @extend %heading-lg;
+    a {
+      color: map-get($colors, 'primary-text-color');
+    }
   }
 
   &__desc {

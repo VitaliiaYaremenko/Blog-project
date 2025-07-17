@@ -6,12 +6,7 @@
   text-align: center;
 
   &__title {
-    @include main-title-styles(
-        map-get($font-sizes, 'xl'),
-        map-get($font-weights, 'bold'),
-        map-get($line-height, 'md'),
-    );
-    letter-spacing: -0.04em;
+    @extend %heading-xxl;
   }
 
   &__data {
@@ -34,12 +29,7 @@
   }
 
   &__title {
-    @include main-title-styles(
-                    map-get($font-sizes, 'xl'),
-                    map-get($font-weights, 'bold'),
-                    map-get($line-height, 'md'),
-    );
-    letter-spacing: -0.04em;
+    @extend %heading-xxl;
     margin-bottom: map-get($spacings, 'xxl');
   }
 

@@ -465,6 +465,9 @@ img {
   justify-content: center;
   margin-bottom: 20px;
 }
+.author-card__name a {
+  color: #232536;
+}
 .author-card__desc {
   font-size: 14px;
   line-height: 1.43;
