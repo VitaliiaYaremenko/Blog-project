@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+%flex-colum {
+  display: flex;
+  flex-direction: column;
+}
+
 %basic-link {
   color: map-get($colors, 'basic-white-color');
   padding-bottom: 2px;
@@ -32,6 +37,13 @@
   font-weight: map-get($font-weights, 'regular');
   color: map-get($colors, 'primary-text-color');
   line-height: map-get($line-height, 'xl');
+}
+
+%heading-xxl {
+  font-size: map-get($font-sizes, 'xl');
+  font-weight: map-get($font-weights, 'bold');
+  line-height: map-get($line-height, 'md');
+  letter-spacing: -0.04em;
 }
 
 %heading-xl {
